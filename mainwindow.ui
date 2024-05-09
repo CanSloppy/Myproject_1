@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>70</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>260</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>工程</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_4"/>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+    <addaction name="action_7"/>
+    <addaction name="actionPic"/>
+    <addaction name="separator"/>
+    <addaction name="action_9"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>视图</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="separator"/>
+   <addaction name="actionFix"/>
+   <addaction name="actionDel"/>
+   <addaction name="actionExit"/>
+   <addaction name="actionRestore"/>
+   <addaction name="actionBackups"/>
+   <addaction name="actionPackage"/>
+   <addaction name="separator"/>
+   <addaction name="actionBiggest"/>
+   <addaction name="actionBig"/>
+   <addaction name="actionSmall"/>
+   <addaction name="actionList"/>
+   <addaction name="actionDetail"/>
+   <addaction name="separator"/>
+   <addaction name="actionRun"/>
+   <addaction name="actionWrite"/>
+   <addaction name="actionPic"/>
+  </widget>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/new.png</normaloff>:/image/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/open.png</normaloff>:/image/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionFix">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/fix.png</normaloff>:/image/fix.png</iconset>
+   </property>
+   <property name="text">
+    <string>修改</string>
+   </property>
+  </action>
+  <action name="actionDel">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/del.png</normaloff>:/image/del.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/exit.png</normaloff>:/image/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionRestore">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/restore.png</normaloff>:/image/restore.png</iconset>
+   </property>
+   <property name="text">
+    <string>恢复</string>
+   </property>
+  </action>
+  <action name="actionBackups">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/backups.png</normaloff>:/image/backups.png</iconset>
+   </property>
+   <property name="text">
+    <string>备份</string>
+   </property>
+  </action>
+  <action name="actionPackage">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/package.png</normaloff>:/image/package.png</iconset>
+   </property>
+   <property name="text">
+    <string>打包</string>
+   </property>
+  </action>
+  <action name="actionBiggest">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/biggest.png</normaloff>:/image/biggest.png</iconset>
+   </property>
+   <property name="text">
+    <string>超大</string>
+   </property>
+  </action>
+  <action name="actionBig">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/big.png</normaloff>:/image/big.png</iconset>
+   </property>
+   <property name="text">
+    <string>大图</string>
+   </property>
+  </action>
+  <action name="actionSmall">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/small.png</normaloff>:/image/small.png</iconset>
+   </property>
+   <property name="text">
+    <string>小图</string>
+   </property>
+  </action>
+  <action name="actionList">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/list.png</normaloff>:/image/list.png</iconset>
+   </property>
+   <property name="text">
+    <string>列表</string>
+   </property>
+  </action>
+  <action name="actionDetail">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/detail.png</normaloff>:/image/detail.png</iconset>
+   </property>
+   <property name="text">
+    <string>详细</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/start.png</normaloff>:/image/start.png</iconset>
+   </property>
+   <property name="text">
+    <string>运行</string>
+   </property>
+  </action>
+  <action name="actionWrite">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/image/Write.png</normaloff>:/image/Write.png</iconset>
+   </property>
+   <property name="text">
+    <string>开发</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>打开工程</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>关闭工程</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>导入</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>导出</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>最近使用文件</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionPic">
+   <property name="text">
+    <string>识别图片</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>

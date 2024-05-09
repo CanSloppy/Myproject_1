@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/1.jpg</file>
+        <file>image/2.jpg</file>
+        <file>image/3.jpg</file>
+        <file>image/backups.png</file>
+        <file>image/big.png</file>
+        <file>image/biggest.png</file>
+        <file>image/del.png</file>
+        <file>image/detail.png</file>
+        <file>image/exit.png</file>
+        <file>image/fix.png</file>
+        <file>image/list.png</file>
+        <file>image/new.png</file>
+        <file>image/open.png</file>
+        <file>image/package.png</file>
+        <file>image/pic.ico</file>
+        <file>image/pic.png</file>
+        <file>image/restore.png</file>
+        <file>image/small.png</file>
+        <file>image/start.png</file>
+        <file>image/Write.png</file>
+    </qresource>
+</RCC>
